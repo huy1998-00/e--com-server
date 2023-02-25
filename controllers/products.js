@@ -71,10 +71,10 @@ exports.addproduct = async (req, res, next) => {
       price: price,
       short_desc: shortDesc,
       long_desc: longDesc,
-      img1: "http://localhost:5000/" + images[0],
-      img2: "http://localhost:5000/" + images[1],
-      img3: "http://localhost:5000/" + images[2],
-      img4: "http://localhost:5000/" + images[3],
+      img1: "https://e-com-server.onrender.com/" + images[0],
+      img2: "https://e-com-server.onrender.com/" + images[1],
+      img3: "https://e-com-server.onrender.com/" + images[2],
+      img4: "https://e-com-server.onrender.com/" + images[3],
     });
     const saved = await product.save();
     res.status(201).json({
